@@ -1,0 +1,55 @@
+"Start Symbol"=<program>
+              
+!-------terminal-------------!
+Id=[_]|{letter}{Alphanumeric}*
+Digit=('+'|'-'){digit}+('.'{digit}+)?('e'|('-'|'+'){digit}+'^'('+'|'-'){digit}+('.'{letter}+)?)?
+     
+<program> ::= Start <stat_list> End
+
+<stat_list> ::= <concept> | <concept> <stat_list>
+
+<concept> ::= <assign> | <if_stat> | <for_stat> |<switch_stmt>
+
+<assign> ::= <id> '=' <expr> ';'
+
+<id> ::= Id
+
+<expr> ::= <term> | <term> '+' <expr> | <term> '-' <expr>
+
+<term> ::= <factor> | <factor> '*' <term> | <factor> '/' <term> | <factor> '%' <term>
+
+<factor> ::= <value> '++' | '--' <id> | <value>
+
+<value> ::= '(' <expr> ')' | <id> | <digit>
+
+<digit> ::= Digit
+       
+!-------if stat---------!
+
+<if_stat> ::= if '(' <cond> ')' Start <stat_list> End | if '(' <cond> ')' Start <stat_list> End else Start <stat_list> End
+
+<cond> ::= <expr> <op> <expr>
+
+<op> ::= '<' | '>' | '==' | '!='
+      
+!------------for stat--------!
+
+<for_stat> ::= for '(' <assign> <cond> ';' <step> ')' '{' <stat_list> '}'
+
+<data> ::= int | float | double | string
+
+<step> ::= '--' <id> | <id> '--' | '++' <id> | <id> '++'
+        
+
+!------switch stat------------!
+
+<switch_stmt> ::= switch '(' <expr> ')' '{' <case_list> '}'
+
+<case_list> ::= <case> | <case> <case_list>
+
+<case> ::= case <expr> ':' <stat_list> <break_stmt>
+
+<break_stmt> ::= break ';'
+
+
+
