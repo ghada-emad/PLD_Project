@@ -1,0 +1,13 @@
+C:\Users\DELL\source\repos\project0\project0\bin\Debug\project0.exe.config
+C:\Users\DELL\source\repos\project0\project0\bin\Debug\project0.exe
+C:\Users\DELL\source\repos\project0\project0\bin\Debug\project0.pdb
+C:\Users\DELL\source\repos\project0\project0\bin\Debug\CalithaLib.dll
+C:\Users\DELL\source\repos\project0\project0\bin\Debug\GoldParserEngine.dll
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.csproj.AssemblyReference.cache
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.Form1.resources
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.Properties.Resources.resources
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.csproj.GenerateResource.cache
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.csproj.CoreCompileInputs.cache
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.csproj.CopyComplete
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.exe
+C:\Users\DELL\source\repos\project0\project0\obj\Debug\project0.pdb
